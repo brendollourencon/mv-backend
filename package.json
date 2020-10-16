@@ -1,0 +1,19 @@
+{
+  "name": "mv-backend",
+  "version": "1.0.0",
+  "description": "Micro serviço rest para o projeto mv",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Brendol Lourençon",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mercadolibre-nodejs-sdk": "^3.0.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
+}
