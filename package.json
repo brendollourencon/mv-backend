@@ -10,6 +10,7 @@
   "author": "Brendol Lourençon",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mercadolibre-nodejs-sdk": "^3.0.1",
