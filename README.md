@@ -1,4 +1,4 @@
-<h1>Estrutura MV Back-Dnd</h1>
+<h1>Estrutura MV Back-End</h1>
 
 <ul>
     <li>server.js - Classe app</li>
