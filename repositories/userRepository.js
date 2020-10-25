@@ -1,9 +1,9 @@
-const UserModel = require('../models/userModel');
+const userModel = require('../models/userModel');
 
 class UserRepository {
 
   constructor() {
-    this.model = UserModel;
+    this.model = userModel;
   }
 
   getAllUsers = async(offset, limit, order) => {

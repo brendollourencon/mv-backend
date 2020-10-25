@@ -17,7 +17,7 @@ const AccountModel = sequelize.define('AccountModel', {
     type: DataTypes.INTEGER
   },
   scope: {
-    type: DataTypes.INTEGER
+    type: DataTypes.STRING
   },
   idUserMl: {
     type: DataTypes.INTEGER

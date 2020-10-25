@@ -15,6 +15,7 @@
     "express": "^4.17.1",
     "mercadolibre-nodejs-sdk": "^3.0.1",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "superagent": "^6.1.0"
   }
 }
