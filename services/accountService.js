@@ -55,7 +55,19 @@ class AccountService {
       throw 'Não foi encontrado nenhuma conta com este email';
     }
 
-    const refreshAccount = await this.mlHelper.refreshToken(account.refresh_token);
+    const refreshAccount = await this.mlHelper.refreshToken(account.refreshToken);
+
+    if(!refreshAccount) throw 'Não foi possível atualizar o token no mercado livre.';
+
+    await this.repository.updateAccount(email, {
+      accessToken: refreshAccount.access_token,
+      tokenType: refreshAccount.token_type,
+      expiresIn: refreshAccount.expires_in,
+      scope: refreshAccount.scope,
+      refreshToken: refreshAccount.refresh_token
+    });
+
+    return refreshAccount;
   }
 }
 

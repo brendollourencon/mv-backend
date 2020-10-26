@@ -1,4 +1,5 @@
 const meli = require('mercadolibre-nodejs-sdk');
+const superagent = require('superagent');
 
 class MercadoLivreHelper {
 
@@ -43,18 +44,13 @@ class MercadoLivreHelper {
   }
 
   refreshToken = async(refreshToken) => {
-    const apiInstance = new meli.RestClientApi();
-
-    return new Promise((resolve, reject) => {
-      const resource = `oauth/token?grant_type=refresh_token&client_id=${this.clientId}&client_secret=${this.secretKey}&refresh_token=${refreshToken}`
-
-      apiInstance.resourceGet(resource, null, (error, data, response) => {
-        if(error) {
-          reject(error);
-        }
-        resolve(response.body);
-      });
+    const result = await superagent.post(`${this.urlApiMl}/oauth/token`, {
+      grant_type: 'refresh_token',
+      client_id: this.clientId,
+      client_secret: this.secretKey,
+      refresh_token: refreshToken
     });
+    return result && result.body ? result.body : null;
   }
 }
 

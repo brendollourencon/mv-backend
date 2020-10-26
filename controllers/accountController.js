@@ -33,9 +33,13 @@ class AccountController {
     try {
       const {email, idUser} = req.body;
 
+      if(!email || !idUser){
+        throw 'Email e/ou id do usuário é inválido.';
+      }
+
       let account = await this.service.refreshToken(email, idUser);
 
-      res.status(400).send({
+      res.status(200).send({
         error: false,
         data: account
       });
