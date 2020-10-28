@@ -27,15 +27,6 @@ class AccountRepository {
     });
   }
 
-  getAccountByIdUser = async(idUser, idAccount) => {
-    return await this.model.findOne({
-      where: {
-        idUser: idUser,
-        id: idAccount
-      }
-    })
-  }
-
 }
 
 module.exports = AccountRepository;

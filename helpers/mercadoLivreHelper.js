@@ -52,6 +52,13 @@ class MercadoLivreHelper {
     });
     return result && result.body ? result.body : null;
   }
+
+  createUserTest = async (accessToken) => {
+    const result = await superagent.post(`${this.urlApiMl}/users/test_user?access_token=${accessToken}`, {
+      site_id: 'MLB'
+    });
+    return result && result.body ? result.body : null;
+  }
 }
 
 module.exports = MercadoLivreHelper

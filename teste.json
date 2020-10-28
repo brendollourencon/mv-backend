@@ -1,169 +1,201 @@
 {
-  "id": 622535325,
-  "nickname": "BLSOFTSISTEMAS",
-  "registration_date": "2020-08-07T16:17:15.000-04:00",
-  "first_name": "Bl",
-  "last_name": "Soft Sistemas",
-  "gender": "",
-  "country_id": "BR",
-  "email": "blsoftsistemas@gmail.com",
-  "identification": {
-    "number": "38967165811",
-    "type": "CPF"
-  },
-  "address": {
-    "address": "Rua Sérgio Casarotti Silva 123",
-    "city": "Franca",
-    "state": "BR-SP",
-    "zip_code": "14407270"
-  },
-  "phone": {
-    "area_code": null,
-    "extension": "",
-    "number": "169999999999",
-    "verified": false
-  },
-  "alternative_phone": {
-    "area_code": "",
-    "extension": "",
-    "number": ""
-  },
-  "user_type": "normal",
-  "tags": [
-    "normal",
-    "messages_as_seller"
-  ],
-  "logo": null,
-  "points": 0,
+  "id": "MLB1672140931",
   "site_id": "MLB",
-  "permalink": "http://perfil.mercadolivre.com.br/BLSOFTSISTEMAS",
-  "shipping_modes": [
-    "custom",
-    "not_specified",
-    "me2"
-  ],
-  "seller_experience": "NEWBIE",
-  "bill_data": {
-    "accept_credit_note": null
-  },
-  "seller_reputation": {
-    "level_id": null,
-    "power_seller_status": null,
-    "transactions": {
-      "canceled": 0,
-      "completed": 1,
-      "period": "historic",
-      "ratings": {
-        "negative": 0,
-        "neutral": 1,
-        "positive": 0
-      },
-      "total": 1
-    },
-    "metrics": {
-      "sales": {
-        "period": "60 months",
+  "title": "Conjunto Feminino Plus Size Blusinha Shorts Listra Grande G2",
+  "seller": {
+    "id": 622535325,
+    "permalink": "http://perfil.mercadolivre.com.br/BLSOFTSISTEMAS",
+    "registration_date": "2020-08-07T16:17:15.000-04:00",
+    "car_dealer": false,
+    "real_estate_agency": false,
+    "tags": [
+      "normal",
+      "messages_as_seller"
+    ],
+    "seller_reputation": {
+      "transactions": {
+        "total": 1,
+        "canceled": 0,
+        "period": "historic",
+        "ratings": {
+          "negative": 0,
+          "positive": 0,
+          "neutral": 1
+        },
         "completed": 1
       },
-      "claims": {
-        "period": "60 months",
-        "rate": 0,
-        "value": 0
+      "power_seller_status": null,
+      "metrics": {
+        "claims": {
+          "rate": 0,
+          "value": 0,
+          "period": "60 months"
+        },
+        "delayed_handling_time": {
+          "rate": 0,
+          "value": 0,
+          "period": "60 months"
+        },
+        "sales": {
+          "period": "60 months",
+          "completed": 1
+        },
+        "cancellations": {
+          "rate": 0,
+          "value": 0,
+          "period": "60 months"
+        }
       },
-      "delayed_handling_time": {
-        "period": "60 months",
-        "rate": 0,
-        "value": 0
-      },
-      "cancellations": {
-        "period": "60 months",
-        "rate": 0,
-        "value": 0
+      "level_id": null
+    },
+    "nickname": "BLSOFTSISTEMAS"
+  },
+  "price": 1000,
+  "prices": {
+    "id": "MLB1672140931",
+    "prices": [
+      {
+        "id": "1b792733-1079-4331-9707-3d0ea1c425eb",
+        "type": "standard",
+        "conditions": {
+          "context_restrictions": [],
+          "start_time": null,
+          "end_time": null,
+          "eligible": true
+        },
+        "amount": 1000,
+        "regular_amount": null,
+        "currency_id": "BRL",
+        "exchange_rate_context": "DEFAULT",
+        "metadata": {},
+        "last_updated": "2020-10-02T02:31:43Z"
       }
+    ],
+    "presentation": {
+      "display_currency": "BRL"
+    },
+    "payment_method_prices": []
+  },
+  "sale_price": null,
+  "currency_id": "BRL",
+  "available_quantity": 1,
+  "sold_quantity": 0,
+  "buying_mode": "buy_it_now",
+  "listing_type_id": "gold_pro",
+  "stop_time": "2040-09-25T04:00:00.000Z",
+  "condition": "new",
+  "permalink": "https://produto.mercadolivre.com.br/MLB-1672140931-conjunto-feminino-plus-size-blusinha-shorts-listra-grande-g2-_JM",
+  "thumbnail": "http://mlb-s2-p.mlstatic.com/891960-MLB43475180258_092020-I.jpg",
+  "accepts_mercadopago": true,
+  "installments": {
+    "quantity": 12,
+    "amount": 83.33,
+    "rate": 0,
+    "currency_id": "BRL"
+  },
+  "address": {
+    "state_id": "BR-SP",
+    "state_name": "São Paulo",
+    "city_id": "BR-SP-09",
+    "city_name": "Franca"
+  },
+  "shipping": {
+    "free_shipping": true,
+    "mode": "me2",
+    "tags": [
+      "mandatory_free_shipping"
+    ],
+    "logistic_type": "drop_off",
+    "store_pick_up": false
+  },
+  "seller_address": {
+    "id": "",
+    "comment": "",
+    "address_line": "",
+    "zip_code": "",
+    "country": {
+      "id": "BR",
+      "name": "Brasil"
+    },
+    "state": {
+      "id": "BR-SP",
+      "name": "São Paulo"
+    },
+    "city": {
+      "id": "BR-SP-09",
+      "name": "Franca"
+    },
+    "latitude": "",
+    "longitude": ""
+  },
+  "attributes": [
+    {
+      "attribute_group_name": "Outros",
+      "source": 4656682178153345,
+      "id": "BRAND",
+      "name": "Marca",
+      "values": [
+        {
+          "id": null,
+          "name": "N.H",
+          "struct": null,
+          "source": 4656682178153345
+        }
+      ],
+      "attribute_group_id": "OTHERS",
+      "value_id": null,
+      "value_name": "N.H",
+      "value_struct": null
+    },
+    {
+      "value_name": "Novo",
+      "attribute_group_id": "OTHERS",
+      "attribute_group_name": "Outros",
+      "source": 4656682178153345,
+      "id": "ITEM_CONDITION",
+      "name": "Condição do item",
+      "value_id": "2230284",
+      "value_struct": null,
+      "values": [
+        {
+          "id": "2230284",
+          "name": "Novo",
+          "struct": null,
+          "source": 4656682178153345
+        }
+      ]
+    },
+    {
+      "value_name": "Conjunto Plus Size Shorts Listra",
+      "values": [
+        {
+          "struct": null,
+          "source": 4656682178153345,
+          "id": null,
+          "name": "Conjunto Plus Size Shorts Listra"
+        }
+      ],
+      "attribute_group_name": "Outros",
+      "source": 4656682178153345,
+      "id": "MODEL",
+      "name": "Modelo",
+      "value_id": null,
+      "value_struct": null,
+      "attribute_group_id": "OTHERS"
     }
+  ],
+  "differential_pricing": {
+    "id": 33580182
   },
-  "buyer_reputation": {
-    "canceled_transactions": 0,
-    "tags": [],
-    "transactions": {
-      "canceled": {
-        "paid": null,
-        "total": null
-      },
-      "completed": null,
-      "not_yet_rated": {
-        "paid": null,
-        "total": null,
-        "units": null
-      },
-      "period": "historic",
-      "total": null,
-      "unrated": {
-        "paid": null,
-        "total": null
-      }
-    }
-  },
-  "status": {
-    "billing": {
-      "allow": true,
-      "codes": []
-    },
-    "buy": {
-      "allow": true,
-      "codes": [],
-      "immediate_payment": {
-        "reasons": [],
-        "required": false
-      }
-    },
-    "confirmed_email": true,
-    "shopping_cart": {
-      "buy": "allowed",
-      "sell": "allowed"
-    },
-    "immediate_payment": false,
-    "list": {
-      "allow": true,
-      "codes": [],
-      "immediate_payment": {
-        "reasons": [],
-        "required": false
-      }
-    },
-    "mercadoenvios": "not_accepted",
-    "mercadopago_account_type": "personal",
-    "mercadopago_tc_accepted": true,
-    "required_action": null,
-    "sell": {
-      "allow": true,
-      "codes": [],
-      "immediate_payment": {
-        "reasons": [],
-        "required": false
-      }
-    },
-    "site_status": "active",
-    "user_type": "complete_registration"
-  },
-  "secure_email": "bsoftsi.z341wh@mail.mercadolivre.com",
-  "company": {
-    "brand_name": null,
-    "city_tax_id": "",
-    "corporate_name": "",
-    "identification": "",
-    "state_tax_id": "",
-    "cust_type_id": "CO",
-    "soft_descriptor": null
-  },
-  "credit": {
-    "consumed": 0,
-    "credit_level_id": "MLB3",
-    "rank": "payer"
-  },
-  "context": {
-    "device": "desktop",
-    "flow": "normal",
-    "source": "mercadolibre"
-  }
-}
+  "original_price": null,
+  "category_id": "MLB1911",
+  "official_store_id": null,
+  "domain_id": "MLB-CLOTHING",
+  "catalog_product_id": null,
+  "tags": [
+    "good_quality_picture",
+    "immediate_payment",
+    "cart_eligible"
+  ],
+  "order_backend": 1
+},

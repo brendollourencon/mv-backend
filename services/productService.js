@@ -69,10 +69,6 @@ class AccountService {
 
     return refreshAccount;
   }
-
-  getAccountByIdUser = async(idUSer, idAccount) => {
-    return await this.repository.getAccountByIdUser(idUSer, idAccount);
-  }
 }
 
 module.exports = AccountService;

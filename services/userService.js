@@ -1,10 +1,14 @@
 const userRepository = require('../repositories/userRepository');
-const Helper = require('../helpers/helper');
+const helper = require('../helpers/helper');
+const mercadoLivreHelper = require('../helpers/mercadoLivreHelper');
+const accountService = require('../services/accountService');
 
 class UserService {
 
   constructor() {
+    this.mlHelper = new mercadoLivreHelper();
     this.repository = new userRepository();
+    this.accountService = new accountService();
   }
 
   getAllUsers = async(offset, limit) => {
@@ -18,7 +22,7 @@ class UserService {
     if(!email || !password) {
       throw 'Email e/ou senha não foram passados corretamente.';
     }
-    password = await Helper.generatePassword(password);
+    password = await helper.generatePassword(password);
 
     let exist = await this.repository.getUSerByEmail(email);
 
@@ -29,6 +33,29 @@ class UserService {
     await this.repository.createNewUser({name, email, password, status});
 
     return await this.repository.getUSerByEmail(email);
+  }
+
+  createUserTest = async(idUser, idAccount) => {
+    const account = await this.accountService.getAccountByIdUser(idUser, idAccount);
+
+    if(!account) {
+      return null;
+    }
+
+    const userTest = await this.mlHelper.createUserTest(account.accessToken);
+
+    if(!userTest) {
+      return null;
+    }
+
+    const dataUserTest = {
+      idMl: userTest.id,
+      nickname: userTest. nickname,
+      password: userTest.password,
+      siteStatus: userTest.site_status
+    };
+
+    return this.repository.createUserTest(dataUserTest);
   }
 }
 

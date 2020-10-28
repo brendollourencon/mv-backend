@@ -1,9 +1,11 @@
 const userModel = require('../models/userModel');
+const userTestModel = require('../models/userTestModel');
 
 class UserRepository {
 
   constructor() {
     this.model = userModel;
+    this.modelUserTest = userTestModel
   }
 
   getAllUsers = async(offset, limit, order) => {
@@ -25,6 +27,15 @@ class UserRepository {
       }
     });
   }
+
+  createUserTest = async(userTest) => {
+    return this.modelUserTest.create(userTest);
+  }
+
+  findAllUserTest = async() => {
+    return this.modelUserTest.findAll();
+  }
+
 }
 
 module.exports = UserRepository;

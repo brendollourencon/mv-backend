@@ -39,6 +39,24 @@ class UserController {
       });
     }
   }
+
+
+  createUserTestMl = async(req, res) => {
+    try {
+      const {idUser, idAccount} = req.body;
+      const userTest = await this.service.createUserTest(idUser, idAccount);
+
+      res.status(200).send({
+        errors: false,
+        data: userTest
+      });
+    } catch(e) {
+      res.status(400).send({
+        errors: e,
+        data: []
+      });
+    }
+  }
 }
 
 module.exports = UserController;
